@@ -10,6 +10,13 @@ return {
     config = function()
       require("catppuccin").setup({
         flavour = "mocha",
+        color_overrides = {
+          mocha = {
+            base = "#11111b",
+            mantle = "#11111b",
+            crust = "#11111b",
+          },
+        },
         integrations = {
           cmp = true,
           gitsigns = true,
@@ -37,10 +44,12 @@ return {
     'nvim-lualine/lualine.nvim',
     event = "VeryLazy",
     opts = function()
+      local custom_catppuccin = require'lualine.themes.catppuccin-mocha'
+      custom_catppuccin.normal.c.bg = '#1e1e2e'
       return {
         options = {
           icons_enabled = true,
-          theme = 'catppuccin',
+          theme = custom_catppuccin,
           component_separators = { left = ' ', right = ' '},
           section_separators = { left = ' ', right = ' '},
           disabled_filetypes = {
