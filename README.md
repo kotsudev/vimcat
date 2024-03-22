@@ -1,4 +1,9 @@
-# 💤 LazyVim
+# Requirements
+- [iterm2](https://iterm2.com)
+- [ohmyzsh](https://ohmyz.sh/)
+- [tmux](https://github.com/tmux/tmux/wiki/Installing)
+- [neovim](https://neovim.io/)
+- [nerdfonts](https://www.nerdfonts.com/)
 
-A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
-Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
+# Configuration
+# Theming
