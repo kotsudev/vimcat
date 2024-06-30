@@ -9,8 +9,8 @@ return {
         options = {
           icons_enabled = true,
           theme = custom_catppuccin,
-          component_separators = { left = " ", right = " " },
-          section_separators = { left = " ", right = " " },
+          component_separators = { left = "", right = "" },
+          section_separators = { left = "", right = "" },
           disabled_filetypes = {
             statusline = {},
             winbar = {},
@@ -26,7 +26,7 @@ return {
         },
         sections = {
           lualine_a = { "mode" },
-          lualine_b = { "branch" },
+          lualine_b = { { "branch", icon = "" } },
           lualine_c = { "filename", "diff" },
           lualine_x = { "diagnostics" },
           lualine_y = { "progress" },
