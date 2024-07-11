@@ -19,6 +19,7 @@ return {
       },
       extensions = {
         file_browser = {
+          hidden = true,
           hijack_netrw = true,
           display_stat = false,
           preview = {
